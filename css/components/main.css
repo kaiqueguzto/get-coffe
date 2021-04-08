@@ -49,10 +49,36 @@
   transform: translateY(-10px);
 }
 
+.footer-mobile {
+  display: none;
+}
+
 @media (max-width:700px) {
 
   .main {
     text-align: center;
+  }
+  
+  .pc {
+    display: none;
+  }
+
+  .footer-mobile {
+    max-width: 1115px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  body {
+    height: 90vh;
   }
 
   .main .copo {
