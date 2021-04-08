@@ -27,7 +27,21 @@ header {
   margin-right: 59px;
   font-size: 18px;
   color: #000;
+  position: relative;
   font-weight: 600;
+}
+
+.wrapper-links a:hover::before {
+  content: "";
+  border-bottom: 2px solid #C95E20;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  animation: linkAnimation 0.3s ease;
 }
 
 .wrapper-links a:last-child {
@@ -42,5 +56,26 @@ header {
 
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes linkAnimation {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .wrapper-links {
+    margin-top: 9px;
   }
 }

@@ -15,7 +15,6 @@
   max-width: 530px;
 }
 
-
 .main div button {
   margin-top: 59px;
   background: #FCA60F;
@@ -50,6 +49,37 @@
   transform: translateY(-10px);
 }
 
+@media (max-width:700px) {
+
+  .main {
+    text-align: center;
+  }
+
+  .main .copo {
+    display: none;
+  }
+
+  .main div button {
+    font-size: 20px;
+    max-width: 290px;
+
+  }
+
+  .main div h1 {
+    font-weight: 700;
+    font-size: 20px;
+  
+    text-align: center;
+    max-width: 530px;
+  }
+}
+
+@media (max-width:290px) {
+  .main div button {
+    width: 100%;
+  }
+
+}
 
 @keyframes animation {
   from {
