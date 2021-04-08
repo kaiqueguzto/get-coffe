@@ -78,4 +78,9 @@ header {
   .wrapper-links {
     margin-top: 9px;
   }
+
+  .wrapper-links a{
+    font-size: 14px;
+    margin-right: 32px;
+  }
 }
