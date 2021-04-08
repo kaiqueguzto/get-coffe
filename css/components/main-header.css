@@ -1,0 +1,40 @@
+header {
+  height: 95px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  max-width: 1115px;
+  width: 1115px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  animation: animation 0.6s ease-in-out;
+} 
+
+.wrapper-links a {
+  margin-right: 59px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+
+.wrapper-links a:last-child {
+  margin: 0px;
+}
+
+
+@keyframes animation {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
