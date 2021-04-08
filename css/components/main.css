@@ -53,10 +53,11 @@
   display: none;
 }
 
-@media (max-width:700px) {
+@media (max-width:720px) {
 
   .main {
     text-align: center;
+    justify-content: center ;
   }
   
   .pc {

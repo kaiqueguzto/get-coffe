@@ -70,10 +70,12 @@ header {
 }
 
 
-@media (max-width: 479px) {
+@media (max-width: 500px) {
   .navbar {
     justify-content: center;
+    flex-direction: column;
   }
+
 
   .wrapper-links {
     margin-top: 9px;
@@ -83,4 +85,11 @@ header {
     font-size: 14px;
     margin-right: 32px;
   }
+}
+
+@media (max-width:279px) {
+  .logo {
+    width: 80%;
+  }
+
 }
