@@ -1,0 +1,64 @@
+.main {
+  max-width: 1115px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  animation: animation 0.6s ease-in-out;
+  flex-wrap: wrap;
+}
+.main div h1 {
+  font-weight: 700;
+  font-size: 36px;
+
+  max-width: 530px;
+}
+
+
+.main div button {
+  margin-top: 59px;
+  background: #FCA60F;
+  font-size: 24px;
+  font-weight: 700px;
+  color: #FFF;
+  width: 290px;
+  padding: 14px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.main div button:hover {
+  transform: scale(1.2);
+}
+
+.main .copo:hover {
+  transform: rotate(-10deg);
+}
+
+.main div .wrapper-icons {
+  margin-top: 32px;
+}
+
+.main div .wrapper-icons img {
+  margin-right: 14px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.main div .wrapper-icons img:hover {
+  transform: translateY(-10px);
+}
+
+
+@keyframes animation {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
